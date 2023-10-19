@@ -4,7 +4,7 @@
       v-model="storeEmployeeCards.isFilterVisible"
       color="pink"
       icon="filter_list_alt"
-      label="Фильры"
+      label="Фильтры"
       class="q-mb-md q-mr-md"
       size="xl"
     />
