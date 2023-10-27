@@ -1,11 +1,11 @@
 
 import { defineStore, } from 'pinia'
 
-import { IEmployeeCard, LEVELS_MAP, LEVEL_NAMES, TLevelNames, } from 'src/types/emloyee-card'
+import { type IEmployeeCard, LEVELS_MAP, LEVEL_NAMES, type TLevelNames, } from 'src/types/emloyee-card'
 
 import { getCollection, } from 'src/boot/firebase'
 
-const EMPLOYEE_LIST: Array<IEmployeeCard> = []
+const EMPLOYEE_LIST: IEmployeeCard[] = []
 
 export const useStoreEmployeeCards = defineStore('employee-cards', {
   state: () => ({
@@ -39,7 +39,7 @@ export const useStoreEmployeeCards = defineStore('employee-cards', {
     async getEmployeeList () {
       const employees = await getCollection('employees')
 
-      const NEW_EMPLOYEE_LIST: Array<IEmployeeCard> = []
+      const NEW_EMPLOYEE_LIST: IEmployeeCard[] = []
 
       employees.forEach((doc) =>
         NEW_EMPLOYEE_LIST.push({

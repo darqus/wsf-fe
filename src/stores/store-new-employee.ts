@@ -4,8 +4,8 @@ import { Notify, } from 'quasar'
 
 import {
   ELevelsNames,
-  IEmployeeCard,
-  TLevelNames,
+  type IEmployeeCard,
+  type TLevelNames,
 } from 'src/types/emloyee-card'
 
 import { addDoc, } from 'src/boot/firebase'
