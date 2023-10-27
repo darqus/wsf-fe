@@ -1,6 +1,4 @@
-type UnknownObjectMap = {
-  [key: string | number]: any
-}
+type UnknownObjectMap = Record<string | number, any>
 
 export type TUser = UnknownObjectMap | null
 

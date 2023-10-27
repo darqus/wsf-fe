@@ -4,7 +4,7 @@ type TLevel = {
   color: string
 }
 
-export const LEVELS_MAP: Array<TLevel> = [
+export const LEVELS_MAP: TLevel[] = [
   {
     key: 'PADAVAN',
     name: 'Падаван',
