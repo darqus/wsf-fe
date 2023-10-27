@@ -31,7 +31,7 @@ module.exports = {
     'vue',
   ],
 
-  globals: {
+  /* globals: {
     ga: 'readonly', // Google Analytics
     cordova: 'readonly',
     __statics: 'readonly',
@@ -42,7 +42,7 @@ module.exports = {
     process: 'readonly',
     Capacitor: 'readonly',
     chrome: 'readonly',
-  },
+  }, */
 
   rules,
 }
