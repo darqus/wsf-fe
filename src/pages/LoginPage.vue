@@ -20,8 +20,8 @@
 
       <q-input
         v-model="storeAuth.password"
-        class="q-mb-lg"
         :rules="[...rules.required, ...rules.password]"
+        class="q-mb-lg"
         label="Пароль"
         type="password"
         dense
