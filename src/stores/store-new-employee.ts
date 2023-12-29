@@ -47,7 +47,7 @@ export const useStoreNewEmployee = defineStore('new-employee', {
             message: `Сотрудник "${this.name}" добавлен`,
           })
         )
-        .catch((error: NodeJS.ErrnoException) => {
+        .catch((error) => {
           this.createErrorMessage(error)
         })
         .finally(() => {
@@ -62,7 +62,7 @@ export const useStoreNewEmployee = defineStore('new-employee', {
       this.level = defaultLevel
       this.description = ''
     },
-    createErrorMessage (error: NodeJS.ErrnoException) {
+    createErrorMessage (error: { code?: string }): void {
       Notify.create({
         color: 'red-5',
         textColor: 'white',

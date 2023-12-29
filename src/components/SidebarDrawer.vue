@@ -22,13 +22,13 @@
     class="q-pa-md"
   >
     <q-btn
-      label="Выйти"
-      color="primary"
-      outline
-      size="md"
-      no-caps
       :disable="storeAuth.loading"
       :loading="storeAuth.loading"
+      color="primary"
+      label="Выйти"
+      size="md"
+      no-caps
+      outline
       @click="storeAuth.onLogout(true)"
     />
   </div>

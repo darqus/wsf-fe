@@ -5,16 +5,16 @@
       class="text-primary"
     >
       <q-tab
-        name="UserCardList"
-        no-caps
         icon="people"
         label="Сотрудники"
+        name="UserCardList"
+        no-caps
       />
       <q-tab
-        name="UserSkillList"
-        no-caps
         icon="noise_aware"
         label="Навыки"
+        name="UserSkillList"
+        no-caps
       />
     </q-tabs>
     <q-tab-panels

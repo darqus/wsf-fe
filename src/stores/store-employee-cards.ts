@@ -1,4 +1,3 @@
-
 import { defineStore, } from 'pinia'
 
 import { type IEmployeeCard, LEVELS_MAP, LEVEL_NAMES, type TLevelNames, } from 'src/types/emloyee-card'

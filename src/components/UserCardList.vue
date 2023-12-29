@@ -2,38 +2,38 @@
   <div class="row">
     <q-toggle
       v-model="storeEmployeeCards.isFilterVisible"
+      class="q-mb-md q-mr-md"
       color="pink"
       icon="filter_list_alt"
       label="Фильтры"
-      class="q-mb-md q-mr-md"
       size="xl"
     />
     <template v-if="storeEmployeeCards.isFilterVisible">
       <q-select
         v-model="storeEmployeeCards.selectedFromLevel"
-        class="q-mb-md"
-        outlined
-        clearable
         :options="storeEmployeeCards.optionsFromLevel"
+        class="q-mb-md"
         label="По уровню"
         style="width: 200px"
+        clearable
+        outlined
       />
       <div class="q-mr-md" />
       <q-select
         v-model="storeEmployeeCards.selectedFromPosition"
-        class="q-mb-md"
-        outlined
-        clearable
         :options="storeEmployeeCards.optionsFromPosition"
+        class="q-mb-md"
         label="По должности"
         style="width: 300px"
+        clearable
+        outlined
       />
     </template>
   </div>
   <q-linear-progress
     v-if="!storeEmployeeCards.isEmployeeList"
-    indeterminate
     class="q-mt-sm"
+    indeterminate
   />
   <div
     v-else
@@ -49,8 +49,8 @@
         description,
       } in storeEmployeeCards.filteredEmployeeList"
       :key="id"
-      bordered
       style="overflow-x: auto"
+      bordered
     >
       <q-card-section style="height: 140px; overflow-y: auto">
         <div class="text-subtitle1">
