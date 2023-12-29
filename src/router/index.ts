@@ -21,8 +21,8 @@ import routes from './routes'
  * with the Router instance.
  */
 
-export default route(function (/* { store, ssrContext } */) {
-  const createHistory = import.meta.env.VITE_SERVER
+export default route((/* { store, ssrContext } */) => {
+  const createHistory = process.env.SERVER
     ? createMemoryHistory
     : import.meta.env.VITE_ROUTER_MODE === 'history'
       ? createWebHistory
